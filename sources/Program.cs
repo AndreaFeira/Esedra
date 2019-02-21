@@ -25,7 +25,6 @@ namespace Esedra
             Console.WriteLine(string.Format("Shopper2 is {0}", s2.charge()));
 
 
-
             //////////////////////////////////////////////
             //Manual dependency injection using getter and setter
             //////////////////////////////////////////////
@@ -39,6 +38,17 @@ namespace Esedra
 
             fs.creditCard = femaleMasterCard;
             Console.WriteLine(string.Format("FemaleShopper is now {0}", fs.charge()));
+
+
+            //////////////////////////////////////////////
+            //Manual dependency injection using Interfaces
+            //////////////////////////////////////////////
+            CompulsiveShopper compulsiveShopper = new CompulsiveShopper();
+            ICreditCard cardWithNoMoney = new Visa();
+
+            ((ICreditCardDependent)compulsiveShopper).InjectADependency(cardWithNoMoney);
+
+            Console.WriteLine(string.Format("Compulsive shopper is now {0}", compulsiveShopper.charge()));
 
             Console.ReadKey();
         }

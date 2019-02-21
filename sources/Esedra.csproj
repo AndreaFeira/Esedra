@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompulsiveShopper.cs" />
     <Compile Include="Interfaces\ICreditCard.cs" />
+    <Compile Include="Interfaces\ICreditCardDependent.cs" />
     <Compile Include="MasterCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
