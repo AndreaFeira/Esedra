@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esedra", "sources\Esedra.csproj", "{CCFBE8B7-D454-4AEC-8255-8BF322FDA8D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCFBE8B7-D454-4AEC-8255-8BF322FDA8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFBE8B7-D454-4AEC-8255-8BF322FDA8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFBE8B7-D454-4AEC-8255-8BF322FDA8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFBE8B7-D454-4AEC-8255-8BF322FDA8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C94CC817-01AD-4426-823D-52877568D65C}
+	EndGlobalSection
+EndGlobal
