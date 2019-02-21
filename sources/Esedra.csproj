@@ -42,8 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ICreditCard.cs" />
+    <Compile Include="MasterCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shopper.cs" />
+    <Compile Include="Visa.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
