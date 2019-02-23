@@ -1,2 +1,2 @@
 # Esedra
-Esedra is a experimental IoC container
+Esedra is an experimental IoC container
