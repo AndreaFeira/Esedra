@@ -68,11 +68,11 @@ namespace Esedra
         /// <summary>
         /// Register a dependency. typeFrom will be resolved in typeTo.
         /// </summary>
-        /// <param name="typeFrom">Type from</param>
-        /// <param name="typeTo">Type to</param>
-        public void register(Type typeFrom, Type typeTo)
+        /// <typeparam name="Tfrom">Type from</typeparam>
+        /// <typeparam name="Tto">Type to</typeparam>
+        public void register<Tfrom, Tto>()
         {
-            dependencyMap.Add(typeFrom, typeTo);
+            dependencyMap.Add(typeof(Tfrom), typeof(Tto));
         }
     }
 }

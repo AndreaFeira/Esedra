@@ -29,8 +29,8 @@ namespace Esedra
             EsedraContainer EsedraIoC = new EsedraContainer();
 
             //register dependencies
-            EsedraIoC.register(typeof(Shopper), typeof(Shopper));
-            EsedraIoC.register(typeof(ICreditCard), typeof(MasterCard));
+            EsedraIoC.register<Shopper, Shopper>();
+            EsedraIoC.register<ICreditCard, MasterCard>();
 
             Shopper s = EsedraIoC.Inject<Shopper>();
             Console.WriteLine(string.Format("Shopper is {0}", s.charge()));
