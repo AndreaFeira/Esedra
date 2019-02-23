@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EsedraContainer.cs" />
     <Compile Include="Interfaces\ICreditCard.cs" />
     <Compile Include="MasterCard.cs" />
     <Compile Include="Program.cs" />

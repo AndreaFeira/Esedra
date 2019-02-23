@@ -11,12 +11,31 @@ namespace Esedra
     {
         public static void Main(string[] args)
         {
-            //Using a resolver to remove all concrete dependency of the shopper
+
+            ///////////////////////////////////
+            //Using Resolver with configuration file.
+            //This will remove all concrete dependency of the shopper
+            ///////////////////////////////////
+
             ICreditCard creditCard = CreditCardResolver.resolve();
 
             Shopper shopper = new Shopper(creditCard);
-
             Console.WriteLine(string.Format("Shopper is {0}", shopper.charge()));
+
+
+            ///////////////////////////////////
+            //Using Esedra IoC Container
+            ///////////////////////////////////
+            EsedraContainer EsedraIoC = new EsedraContainer();
+
+            //register dependencies
+            EsedraIoC.register(typeof(Shopper), typeof(Shopper));
+            EsedraIoC.register(typeof(ICreditCard), typeof(MasterCard));
+
+            Shopper s = EsedraIoC.Inject<Shopper>();
+            Console.WriteLine(string.Format("Shopper is {0}", s.charge()));
+
+
 
             Console.ReadKey();
         }
